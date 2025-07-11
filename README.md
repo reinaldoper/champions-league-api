@@ -224,6 +224,14 @@ Em outro terminal:
 
 ```bash
 npm run dev
+
+#ou
+
+npm run start #roda os dois servidores simultaneos
+
+#ou
+
+npm run build #gera o build da aplicação
 ```
 
 
