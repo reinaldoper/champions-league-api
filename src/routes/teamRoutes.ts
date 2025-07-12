@@ -102,6 +102,6 @@ router.delete('/:id', teamController.deleteTeam);
  *         schema:
  *           type: string
  */
-router.get('/country', teamController.getTeamsByCountry);
+router.patch('/country', teamController.getTeamByCountry);
 
 export default router;

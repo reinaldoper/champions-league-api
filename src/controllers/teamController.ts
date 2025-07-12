@@ -42,9 +42,10 @@ export const deleteTeam = async (req: Request, res: Response, next: NextFunction
     next(error);
   }
 };
-export const getTeamsByCountry = async (req: Request, res: Response, next: NextFunction) => {
+export const getTeamByCountry = async (req: Request, res: Response, next: NextFunction) => {
   try {
-    const teams = await teamService.getTeamsByCountry(req.query.country as string);
+    const country = req.query.country as string; 
+    const teams = await teamService.getTeamsByCountry(country);
     res.json(teams);
   } catch (error) {
     next(error);

@@ -29,6 +29,6 @@ export const getMatchesByTeam = async (teamId: number): Promise<Match[]> => {
 };
 
 export const getMatchesByCountry = async (country: string): Promise<Match[]> => {
-  const response = await jsonServer.get<Match[]>(`/matches?stadium=${country}`);
+  const response = await jsonServer.get<Match[]>(`/matches?stadium_like=${country}`);
   return response.data;
 }

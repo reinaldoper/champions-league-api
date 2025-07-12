@@ -112,6 +112,6 @@ router.get('/team/:teamId', matchController.getMatchesByTeam);
  *         schema:
  *           type: string
  */
-router.get('/country', matchController.getMatchesByCountry);
+router.patch('/country', matchController.getMatchesByCountry);
 
 export default router;
