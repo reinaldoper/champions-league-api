@@ -22,6 +22,6 @@ export const deleteTeam = async (id: number): Promise<void> => {
   await jsonServer.delete(`/teams/${id}`);
 };
 export const getTeamsByCountry = async (country: string): Promise<Team[]> => {
-  const response = await jsonServer.get<Team[]>(`/teams?country=${country}`);
+  const response = await jsonServer.get<Team[]>(`/teams?country_like=${country}`);
   return response.data;
 }

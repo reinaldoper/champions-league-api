@@ -7,7 +7,8 @@
     "dev": "ts-node-dev src/server.ts",
     "json-server": "json-server --watch src/db.json --port 5000",
     "start": "npm run dev & npm run json-server",
-    "build": "tsc"
+    "build": "tsc",
+    "serve": "node dist/server.js"
   },
   "keywords": [],
   "author": "",
