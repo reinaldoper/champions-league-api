@@ -52,7 +52,7 @@ export const getMatchesByTeam = async (req: Request, res: Response, next: NextFu
 };
 export const getMatchesByCountry = async (req: Request, res: Response, next: NextFunction) => {
   try {
-    const country = req.query.country as string;
+    const country = req.query.stadium as string;
     const matches = await matchService.getMatchesByCountry(country);
     res.json(matches);
   } catch (error) {
